@@ -48,8 +48,10 @@ public class Model {
      *
      * @param data A {@link String} data.
      */
+    
     public void setData(String data) {
         mData = data;
+        
     }
 
 }
