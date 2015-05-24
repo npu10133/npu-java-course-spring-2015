@@ -43,6 +43,7 @@ public class ObserverSample {
         List<View> views = new ArrayList<>();
         views.add(new View("View 1", window, model));
         views.add(new View("View 2", window, model));
+        views.add(new View("View 3", window, model));
         views.add(new AlternativeView("AlternativeView", window, model));
         window.startEventLoop(controller, views);
     }

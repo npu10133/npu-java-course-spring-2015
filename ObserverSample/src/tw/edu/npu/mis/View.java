@@ -35,7 +35,14 @@ public class View {
     final String mName;
     private final Window mWindow;
     final Model mModel;
-    String x;
+    String i;
+    /**
+     * 
+     * @param name
+     * @param window
+     * @param model 
+     * 
+     */
     public View(String name, Window window, Model model) {
         mName = name;
         mWindow = window;
@@ -53,9 +60,9 @@ public class View {
      * Show the content of the model on the console.
      */
     public void onDraw() {
-        if(x!=mModel.getData()){
+        if(i!=mModel.getData()){
             System.out.println("View (" + mName + "): " + mModel.getData());
-            x=mModel.getData();
+           i=mModel.getData();
         }
     }
 
