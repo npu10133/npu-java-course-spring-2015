@@ -33,22 +33,12 @@ package tw.edu.npu.mis;
 public class Model {
 
     private String mData;
-
-    /**
-     * Get model content.
-     *
-     * @return {@link String}
-     */
     public String getData() {
         return mData;
     }
-
-    /**
-     * Update model.
-     *
-     * @param data A {@link String} data.
-     */
-    
+/**
+ * 取得view的資料
+ */
     public void setData(String data) {
         mData = data;
         

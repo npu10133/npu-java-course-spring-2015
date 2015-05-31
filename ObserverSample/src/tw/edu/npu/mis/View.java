@@ -36,6 +36,12 @@ public class View {
     private final Window mWindow;
     final Model mModel;
     String i;
+    
+    public View(String name, Window window, Model model) {
+        mName = name;
+        mWindow = window;
+        mModel = model;
+    }
     /**
      * 
      * @param name
@@ -43,15 +49,7 @@ public class View {
      * @param model 
      * 
      */
-    public View(String name, Window window, Model model) {
-        mName = name;
-        mWindow = window;
-        mModel = model;
-    }
-
-    /**
-     * Invalidate the view, which indicates it needs to be redrawn later.
-     */
+   
     public void invalidate() {
         mWindow.schduleRedraw(this);
     }
