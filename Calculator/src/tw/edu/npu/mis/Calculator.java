@@ -32,7 +32,10 @@ public class Calculator {
         MEM_RECALL,  // MR
         MEM_CLEAR    // MC
     }
-    
+    /**
+     * txt1
+     * @param digit 
+     */
     public void appendDigit(int digit) {
         // TODO code application logic here
     }
