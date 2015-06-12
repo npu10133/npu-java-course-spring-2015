@@ -70,14 +70,14 @@ public class CalculatorView extends javax.swing.JFrame {
         button8 = new javax.swing.JButton();
         button9 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        buttonBagi = new javax.swing.JButton();
-        buttonKali = new javax.swing.JButton();
-        buttonKurang = new javax.swing.JButton();
-        buttonTambah = new javax.swing.JButton();
-        buttonAC = new javax.swing.JButton();
-        buttonModulus = new javax.swing.JButton();
-        buttonSeper = new javax.swing.JButton();
-        buttonSamaDengan = new javax.swing.JButton();
+        buttonOver = new javax.swing.JButton();
+        buttonTimes = new javax.swing.JButton();
+        buttonMinus = new javax.swing.JButton();
+        buttonPlus = new javax.swing.JButton();
+        buttonClear = new javax.swing.JButton();
+        buttonPercent = new javax.swing.JButton();
+        buttonReciprocal = new javax.swing.JButton();
+        buttonEqual = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         menuFile = new javax.swing.JMenu();
         menuExit = new javax.swing.JMenuItem();
@@ -258,59 +258,59 @@ public class CalculatorView extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        buttonBagi.setText("/");
-        buttonBagi.addActionListener(new java.awt.event.ActionListener() {
+        buttonOver.setText("/");
+        buttonOver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonBagiActionPerformed(evt);
+                buttonOverActionPerformed(evt);
             }
         });
 
-        buttonKali.setText("*");
-        buttonKali.addActionListener(new java.awt.event.ActionListener() {
+        buttonTimes.setText("*");
+        buttonTimes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonKaliActionPerformed(evt);
+                buttonTimesActionPerformed(evt);
             }
         });
 
-        buttonKurang.setText("-");
-        buttonKurang.addActionListener(new java.awt.event.ActionListener() {
+        buttonMinus.setText("-");
+        buttonMinus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonKurangActionPerformed(evt);
+                buttonMinusActionPerformed(evt);
             }
         });
 
-        buttonTambah.setText("+");
-        buttonTambah.addActionListener(new java.awt.event.ActionListener() {
+        buttonPlus.setText("+");
+        buttonPlus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonTambahActionPerformed(evt);
+                buttonPlusActionPerformed(evt);
             }
         });
 
-        buttonAC.setText("AC");
-        buttonAC.addActionListener(new java.awt.event.ActionListener() {
+        buttonClear.setText("AC");
+        buttonClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonACActionPerformed(evt);
+                buttonClearActionPerformed(evt);
             }
         });
 
-        buttonModulus.setText("%");
-        buttonModulus.addActionListener(new java.awt.event.ActionListener() {
+        buttonPercent.setText("%");
+        buttonPercent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonModulusActionPerformed(evt);
+                buttonPercentActionPerformed(evt);
             }
         });
 
-        buttonSeper.setText("1/x");
-        buttonSeper.addActionListener(new java.awt.event.ActionListener() {
+        buttonReciprocal.setText("1/x");
+        buttonReciprocal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSeperActionPerformed(evt);
+                buttonReciprocalActionPerformed(evt);
             }
         });
 
-        buttonSamaDengan.setText("=");
-        buttonSamaDengan.addActionListener(new java.awt.event.ActionListener() {
+        buttonEqual.setText("=");
+        buttonEqual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonSamaDenganActionPerformed(evt);
+                buttonEqualActionPerformed(evt);
             }
         });
 
@@ -321,22 +321,22 @@ public class CalculatorView extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(buttonKurang, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonMinus, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(buttonSeper))
+                        .addComponent(buttonReciprocal))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(buttonTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(buttonPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(buttonSamaDengan, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE))
+                        .addComponent(buttonEqual, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(buttonKali, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonTimes, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(buttonModulus, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(buttonPercent, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(buttonBagi, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(buttonOver, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(buttonAC))))
+                            .addComponent(buttonClear))))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -344,20 +344,20 @@ public class CalculatorView extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonBagi, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonAC, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonOver, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonClear, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonKali, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonModulus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonTimes, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonPercent, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonKurang, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonSeper, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonMinus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonReciprocal, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(buttonTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(buttonSamaDengan, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(buttonPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonEqual, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -428,33 +428,33 @@ public class CalculatorView extends javax.swing.JFrame {
         getOperand(button9);
     }//GEN-LAST:event_button9ActionPerformed
 
-    private void buttonTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTambahActionPerformed
+    private void buttonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPlusActionPerformed
         getOperator(1);
-    }//GEN-LAST:event_buttonTambahActionPerformed
+    }//GEN-LAST:event_buttonPlusActionPerformed
 
-    private void buttonKurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonKurangActionPerformed
+    private void buttonMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMinusActionPerformed
        getOperator(2);
-    }//GEN-LAST:event_buttonKurangActionPerformed
+    }//GEN-LAST:event_buttonMinusActionPerformed
 
-    private void buttonKaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonKaliActionPerformed
+    private void buttonTimesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonTimesActionPerformed
         getOperator(3);
-    }//GEN-LAST:event_buttonKaliActionPerformed
+    }//GEN-LAST:event_buttonTimesActionPerformed
 
-    private void buttonBagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonBagiActionPerformed
+    private void buttonOverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonOverActionPerformed
         getOperator(4);
-    }//GEN-LAST:event_buttonBagiActionPerformed
+    }//GEN-LAST:event_buttonOverActionPerformed
 
-    private void buttonModulusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonModulusActionPerformed
+    private void buttonPercentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPercentActionPerformed
         getOperator(5);
-    }//GEN-LAST:event_buttonModulusActionPerformed
+    }//GEN-LAST:event_buttonPercentActionPerformed
 
-    private void buttonSeperActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSeperActionPerformed
+    private void buttonReciprocalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonReciprocalActionPerformed
         getOperator(6);
-    }//GEN-LAST:event_buttonSeperActionPerformed
+    }//GEN-LAST:event_buttonReciprocalActionPerformed
 
-    private void buttonSamaDenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSamaDenganActionPerformed
+    private void buttonEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEqualActionPerformed
         process();
-    }//GEN-LAST:event_buttonSamaDenganActionPerformed
+    }//GEN-LAST:event_buttonEqualActionPerformed
 
     private void button11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button11ActionPerformed
         getOperand(button11);
@@ -476,12 +476,12 @@ public class CalculatorView extends javax.swing.JFrame {
         }       
     }//GEN-LAST:event_button12ActionPerformed
 
-    private void buttonACActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonACActionPerformed
+    private void buttonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClearActionPerformed
         operand = "";
         model.setOperator(0);
         model.setResult(0);
         resultLabel.setText("0");
-    }//GEN-LAST:event_buttonACActionPerformed
+    }//GEN-LAST:event_buttonClearActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -497,15 +497,15 @@ public class CalculatorView extends javax.swing.JFrame {
     private javax.swing.JButton button7;
     private javax.swing.JButton button8;
     private javax.swing.JButton button9;
-    private javax.swing.JButton buttonAC;
-    private javax.swing.JButton buttonBagi;
-    private javax.swing.JButton buttonKali;
+    private javax.swing.JButton buttonClear;
+    private javax.swing.JButton buttonOver;
+    private javax.swing.JButton buttonTimes;
     private javax.swing.JButton buttonKoma;
-    private javax.swing.JButton buttonKurang;
-    private javax.swing.JButton buttonModulus;
-    private javax.swing.JButton buttonSamaDengan;
-    private javax.swing.JButton buttonSeper;
-    private javax.swing.JButton buttonTambah;
+    private javax.swing.JButton buttonMinus;
+    private javax.swing.JButton buttonPercent;
+    private javax.swing.JButton buttonEqual;
+    private javax.swing.JButton buttonReciprocal;
+    private javax.swing.JButton buttonPlus;
     private javax.swing.JMenu helpMenu;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;

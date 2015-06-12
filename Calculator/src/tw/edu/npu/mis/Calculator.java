@@ -32,26 +32,7 @@ public class Calculator {
         MEM_RECALL,  // MR
         MEM_CLEAR    // MC
     }
-    /**
-     * txt1
-     * @param digit 
-     */
-    public void appendDigit(int digit) {
-        // TODO code application logic here
-    }
     
-    public void appendDot() {
-        // TODO code application logic here
-    }
-    
-    public void performOperation(Operator operator) {
-        // TODO code application logic here
-    }
-    
-    public String getDisplay() {
-        // TODO code application logic here
-        return null;
-    }
 
     /**
      * @param args the command line arguments
